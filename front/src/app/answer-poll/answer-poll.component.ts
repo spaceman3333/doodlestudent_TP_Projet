@@ -112,6 +112,12 @@ export class AnswerPollComponent implements OnInit {
     });
 
     this.options = {
+      headerToolbar:{
+        start: 'dayGridMonth,timeGridWeek,timeGridDay',
+        center: 'title',
+        end: 'prevYear,prev,next,nextYear'
+      },
+      displayEventEnd: true,
       initialView: 'timeGridWeek',
       plugins: [dayGridPlugin, interactionPlugin, timeGridPlugin],
 
